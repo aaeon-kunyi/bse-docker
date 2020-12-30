@@ -26,6 +26,12 @@ bse-docker container for build imx8mm-bse OS image
     >
     > ./build_container.sh # the step will build a docker image on local host and create ./works folder for place your source code
 
+    > or pull image from github packages
+    >
+    > docker pull docker.pkg.github.com/aaeon-kunyi/bse-docker/bse-build-dev:latest
+    >
+    > docker tag docker.pkg.github.com/aaeon-kunyi/bse-docker/bse-build-dev bse-build-dev:1.0
+
 4. put ** 'debian-bse_20201211.tgz' ** into ./works and decompress it
   
    > tar zxvf debian-bse_20201211.tgz
