@@ -5,7 +5,7 @@ bse-docker container for build imx8mm-bse OS image
 
 1. to install docker.io, please reference [this article](https://docs.docker.com/engine/install/ubuntu). And to add your account into docker group and launch docker
 
-    > sudo usermod -aG docker <your account>
+    > sudo usermod -aG docker \<your account\>
     >
     > \# reminds: you can reboot the host or
     >
