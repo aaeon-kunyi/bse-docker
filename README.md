@@ -38,15 +38,23 @@ bse-docker container for build imx8mm-bse OS image
    >
    > MACHINE=imx8mm-bse ./aaeon_make_debian.sh -c deploy
 
-5. run the docker image for build imx8mm-bse OS image 
+5. run the docker image for build imx8mm-bse OS root filesystem and bootloader
 
     > ./run_container.sh  # the step will start a container
     >
     > sudo MACHINE=imx8mm-bse ./aaeon_make_debian.sh -c all
+
+6. due to docker container limitation, we need exit container environment firt then to generation image
+
+    > exit \# for exit container
+    >
+    > cd works \# into works folder
     >
     > sudo MACHINE=imx8mm-bse ./aaeon_make_debian.sh -c rescu
+    >
+    > cd ..
 
-6. to check ./output folder
+7. to check ./output folder
 
     > ls ./output
     >
